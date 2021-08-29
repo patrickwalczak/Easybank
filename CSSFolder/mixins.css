@@ -1,0 +1,77 @@
+@media all and (max-width: 719.98px) {
+  .header nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .hide-for-mobile {
+    display: none;
+  }
+
+  .hero__text > h1,
+  p {
+    text-align: center;
+    padding: 0rem 2.5rem;
+  }
+
+  .hero__text > p {
+    padding: 0rem 3rem;
+  }
+
+  /* Positioning the button */
+  .hero__text {
+    padding-bottom: 4.375rem;
+  }
+
+  .placer {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* ============================ */
+}
+
+/* Greater than mobile */
+/* ========================= */
+
+@media all and (min-width: 719.99px) {
+  .hide-for-desktop {
+    display: none;
+  }
+
+  .mobile__menu {
+    display: none;
+  }
+  .overlay,
+  .fade-in,
+  .fade-out {
+    display: none;
+  }
+
+  .header nav {
+    padding-left: 5rem;
+    padding-right: 8rem;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero__text > p {
+    text-align: left;
+  }
+
+  .hero__text > h1 {
+    text-align: left;
+  }
+  .hero__text {
+    flex: 2;
+    align-self: flex-start;
+    justify-content: flex-start;
+    padding-top: 9rem;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+  }
+}

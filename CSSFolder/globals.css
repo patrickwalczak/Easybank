@@ -1,0 +1,112 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: var(--Grayish_Blue);
+  font-family: 'Public Sans', sans-serif;
+  line-height: 1.3; /*Space between lines*/
+}
+
+/* It doesn't allow to scroll when menu is displayed */
+.noscroll {
+  overflow: hidden;
+}
+
+/* Default styling for all links */
+/* X number of px divided by 16 equal number of rem */
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: var(--Grayish_Blue);
+}
+
+/* Flexbox */
+/* flex class in the nav element */
+.flex {
+  display: flex;
+  justify-content: var(--F-jc-sb);
+  align-items: var(--F-ai-c);
+}
+
+/* Styles for button element and a element with button class */
+
+button,
+.button {
+  border: none;
+  padding: 0.775rem 1.8875rem;
+  background: linear-gradient(
+    to right,
+    var(--Lime_Green) 0%,
+    var(--Bright_Cyan) 70%,
+    var(--Bright_Cyan) 100%
+  );
+  border-radius: 2rem;
+  cursor: pointer;
+  color: var(--White);
+  font-weight: 400;
+  transition: opacity 200ms;
+}
+
+button:hover,
+.button:hover {
+  opacity: 0.8;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+  color: var(--Dark_Blue);
+  line-height: 1.15;
+}
+
+:root {
+  --F-jc-sb: space-between;
+  --F-jc-sa: center;
+  --F-ai-c: center;
+  --Grayish_Blue: hsl(233, 8%, 62%);
+  --Light_Grayish_Blue: hsl(220, 16%, 96%);
+  --Very_Light_Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Dark_Blue: hsl(233, 26%, 24%);
+  --Lime_Green: hsl(136, 65%, 51%);
+  --Bright_Cyan: hsl(192, 70%, 51%);
+
+  /* 640px, 1024px, 1400px */
+  --BR_medium: 40em;
+  --BR_large: 64em;
+  --BR_xlarge: 87.6em;
+
+  /* 639px, 1023px, 1399px */
+  --BR_down-small: 39.9375em;
+  --BR_down_medium: 63.9375em;
+  --BR_down_xlarge: 84.4375em;
+}
+
+/* orange - blue */
+/* .testing__colors {
+  border: none;
+  padding: 0.775rem 1.8875rem;
+  background: linear-gradient(
+    to top,
+    rgb(255, 117, 37) 0%,
+    rgb(96, 203, 253) 100%
+  );
+  border-radius: 2rem;
+  cursor: pointer;
+  color: var(--White);
+  font-weight: 400;
+  transition: opacity 200ms;
+} */

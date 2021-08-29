@@ -1,0 +1,252 @@
+/* .hero > :not(:first-child) {
+  padding: 0px 1.5rem;
+} */
+
+.hero__text > h1 {
+  color: var(--Dark_Blue);
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+@media all and (max-width: 460px) {
+  .hero__text > h1 {
+    font-size: 1.9rem;
+    margin-top: 2rem;
+  }
+}
+
+@media all and (min-width: 460px) and (max-width: 1023px) {
+  .hero__text > h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .hero__text > p {
+    font-size: 0.7rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+}
+
+.hero__text > p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* ================================================= */
+
+.features {
+  background-color: var(--Light_Grayish_Blue);
+  padding: 6rem 5rem;
+  text-align: center;
+}
+
+@media all and (max-width: 500px) {
+  .features {
+    padding: 6rem 2rem;
+  }
+}
+
+@media all and (min-width: 640px) {
+  .features {
+    text-align: left;
+  }
+}
+
+.feature__intro {
+  margin-bottom: 3.75rem;
+}
+
+@media all and (min-width: 1024px) {
+  .feature__intro {
+    width: 58%;
+  }
+}
+
+.features > p {
+  line-height: 1.5;
+}
+
+h2 {
+  color: var(--Dark_Blue);
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1.56rem;
+}
+
+@media all and (min-width: 640px) {
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2.25rem;
+  }
+}
+
+/* ===================================== */
+/* .feature__grid {
+   flex-direction: row; 
+  justify-content: space-between; 
+}
+
+ for 1024px 
+ @media all and (min-width: 1024px) {
+  .feature__grid {
+    display: flex;
+  }
+} */
+
+/* ========================================= */
+
+/* for tablet */
+@media all and (min-width: 640px) {
+  .feature__grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.feature__item {
+  padding: 0.9375rem;
+}
+
+/* for tablet */
+@media all and (min-width: 640px) {
+  .feature__item {
+    flex: 0 0 50%;
+    /* flex: grow, shrink, how much space will take one time (50%, because on tablets view we want two items */
+  }
+}
+
+/* for 1024px */
+@media all and (min-width: 1024px) {
+  .feature__item {
+    flex: 1;
+  }
+}
+
+.feature__icon {
+  margin-bottom: 1.875rem;
+}
+
+@media all and (min-width: 640px) {
+  .feature__icon {
+    margin-bottom: 2.75rem;
+  }
+}
+
+.feature__title {
+  color: var(--Dark_Blue);
+  font-family: inherit;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+@media all and (min-width: 1024px) {
+  .feature__title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media all and (min-width: 500px) {
+  .feature__description {
+    font-size: 0.9rem;
+    width: 85%;
+    line-height: 1.5;
+  }
+}
+
+.feature__description {
+  font-size: 0.9rem;
+  width: 95%;
+  line-height: 1.5;
+}
+
+/* =============================================== */
+
+/* Hero images and media querries */
+/* ================================= */
+
+.hero__image {
+  position: relative;
+  background-image: url('../images/bg-intro-mobile.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5rem;
+}
+
+@media all and (min-width: 1024px) {
+  .hero__image {
+    flex: 3;
+    order: 2;
+    height: 37rem;
+    background-image: none;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .hero__image::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: -46% 74%;
+    background-size: 130%;
+  }
+}
+
+.hero__image::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/image-mockups.png');
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+@media all and (min-width: 640px) and (max-width: 1023.99px) {
+  .hero__image::after {
+    background-size: 102%;
+    background-position: -700% 87%;
+    width: 100%;
+    height: 115%;
+  }
+  .hero__image::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: 10% 25%;
+    background-size: 150%;
+  }
+
+  .hero__image {
+    background-image: none;
+    min-height: 29rem;
+    background-position: center 70%;
+    flex: 3;
+    order: 2;
+  }
+}
+@media all and (min-width: 1024px) {
+  .hero__image::after {
+    width: 100%;
+    height: 121%;
+    background-size: 88%;
+    background-position: 224% 96%;
+    /* left: 22%; */
+  }
+}

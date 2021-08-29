@@ -1,0 +1,20 @@
+{
+  "name": "for-project",
+  "version": "1.0.0",
+  "description": "An idea for this website comes from frontendmentor.io",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel script.js",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.16.4",
+    "parcel": "^2.0.0-rc.0",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0"
+  }
+}
