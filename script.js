@@ -26,3 +26,5 @@ ham_menu.addEventListener('click', function () {
     mobile_menu.classList.add('fade-out');
   }
 });
+
+console.log('test');
