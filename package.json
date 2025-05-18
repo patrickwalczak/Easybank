@@ -1,20 +1,16 @@
 {
-  "name": "for-project",
-  "version": "1.0.0",
-  "description": "An idea for this website comes from frontendmentor.io",
-  "default": "index.html",
-  "scripts": {
-    "start": "parcel script.js",
-    "build": "parcel build index.html --dist-dir ./dist"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "core-js": "^3.16.4",
-    "parcel": "^2.0.0-rc.0",
-    "regenerator-runtime": "^0.13.9"
-  },
-  "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0"
-  }
+	"name": "easybank",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.21",
+		"postcss": "^8.5.3",
+		"postcss-nesting": "^13.0.1",
+		"vite": "^6.3.5"
+	}
 }

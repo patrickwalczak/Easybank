@@ -15,16 +15,13 @@ body {
   font-weight: 300;
   color: var(--Grayish_Blue);
   font-family: 'Public Sans', sans-serif;
-  line-height: 1.3; /*Space between lines*/
+  line-height: 1.3;
 }
 
-/* It doesn't allow to scroll when menu is displayed */
 .noscroll {
   overflow: hidden;
 }
 
-/* Default styling for all links */
-/* X number of px divided by 16 equal number of rem */
 a,
 a:visited,
 a:hover {
@@ -32,26 +29,21 @@ a:hover {
   color: var(--Grayish_Blue);
 }
 
-/* Flexbox */
-/* flex class in the nav element */
 .flex {
   display: flex;
   justify-content: var(--F-jc-sb);
   align-items: var(--F-ai-c);
 }
 
-/* Styles for button element and a element with button class */
 
 button,
 .button {
   border: none;
   padding: 0.775rem 1.8875rem;
-  background: linear-gradient(
-    to right,
-    var(--Lime_Green) 0%,
-    var(--Bright_Cyan) 70%,
-    var(--Bright_Cyan) 100%
-  );
+  background: linear-gradient(to right,
+      var(--Lime_Green) 0%,
+      var(--Bright_Cyan) 70%,
+      var(--Bright_Cyan) 100%);
   border-radius: 2rem;
   cursor: pointer;
   color: var(--White);
@@ -94,19 +86,3 @@ h3 {
   --BR_down_medium: 63.9375em;
   --BR_down_xlarge: 84.4375em;
 }
-
-/* orange - blue */
-/* .testing__colors {
-  border: none;
-  padding: 0.775rem 1.8875rem;
-  background: linear-gradient(
-    to top,
-    rgb(255, 117, 37) 0%,
-    rgb(96, 203, 253) 100%
-  );
-  border-radius: 2rem;
-  cursor: pointer;
-  color: var(--White);
-  font-weight: 400;
-  transition: opacity 200ms;
-} */

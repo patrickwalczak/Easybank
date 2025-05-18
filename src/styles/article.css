@@ -13,7 +13,6 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.875rem;
-  /* grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr)); */
 }
 
 @media all and (min-width: 640px) {
@@ -41,24 +40,13 @@
 }
 
 .article__item:hover .article__title {
-  /* Create the gradient. */
-  background-image: linear-gradient(
-    to right,
-    var(--Lime_Green) 0%,
-    var(--Bright_Cyan) 70%,
-    var(--Bright_Cyan) 100%
-  );
+  background-image: linear-gradient(to right,
+      var(--Lime_Green) 0%,
+      var(--Bright_Cyan) 70%,
+      var(--Bright_Cyan) 100%);
 
-  /* Set the background size and repeat properties. */
   background-size: 100%;
   background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
 }
 
 .article__image {
